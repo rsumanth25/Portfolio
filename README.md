@@ -2,8 +2,10 @@
 
 This is my personal portfolio website built using **React**, **Tailwind CSS**, and a **Node.js/Express** backend for the contact form.
 
-🔗 **Live Site**: _(to be added after deployment)_
+## 🌐 Live Demo
 
+Check out the live portfolio here:  
+🔗 [https://portfolio-one-jet-39.vercel.app](https://portfolio-one-jet-39.vercel.app)
 ---
 
 ## 📁 Project Structure
