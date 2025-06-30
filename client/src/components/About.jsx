@@ -30,14 +30,7 @@ function About() {
           I’m eager to contribute to innovative teams and continuously grow as a developer and security engineer.
         </p>
 
-      <a
-        href="https://drive.google.com/file/d/1yntulsY9ZAqo6pGbV8PX6cenwcF7vj97/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-      >
-        📄 Download Resume
-      </a>
+      
     </div>
   </motion.div>
 </section>
