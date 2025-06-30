@@ -19,11 +19,20 @@ app.post('/send', async (req, res) => {
   });
 
   const mailOptions = {
-    from: email,
-    to: process.env.MAIL_USER,
-    subject: `New message from ${name}`,
-    text: message,
-  };
+  from: process.env.MAIL_USER,          // ✅ must be your Gmail
+  to: process.env.MAIL_USER,            // you receive the email
+  replyTo: email,                       // ✅ reply goes to visitor
+  subject: `New message from ${name}`,
+  text: `
+You have received a new message from your portfolio contact form:
+
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}
+  `,
+};
 
   try {
     await transporter.sendMail(mailOptions);
