@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import {
-  FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaReact, FaNodeJs,
+  FaHtml5, FaJs, FaPython, FaJava, FaReact, FaNodeJs,
   FaDatabase, FaGitAlt, FaGithub, FaTerminal
 } from "react-icons/fa";
-import { SiTailwindcss, SiFlask, SiMongodb, SiMysql, SiPostman,  SiWireshark} from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiMysql } from "react-icons/si";
 
 
 
@@ -15,16 +15,13 @@ const skills = [
       { icon: <FaJava />, name: "Java" },
       { icon: <FaTerminal />, name: "C" },
       { icon: <FaJs />, name: "JavaScript" },
-      { icon: <FaHtml5 />, name: "HTML" },
-      { icon: <FaCss3Alt />, name: "CSS" }
+      { icon: <FaHtml5 />, name: "HTML" }
     ]
   },
   {
     title: "Frameworks & Libraries",
     items: [
       { icon: <FaReact />, name: "React.js" },
-      { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-      { icon: <SiFlask />, name: "Flask" },
       { icon: <FaNodeJs />, name: "Node.js" },
     ]
   },
@@ -40,8 +37,6 @@ const skills = [
     items: [
       { icon: <FaGitAlt />, name: "Git" },
       { icon: <FaGithub />, name: "GitHub" },
-      { icon: <SiPostman />, name: "Postman" },
-      { icon: <SiWireshark />, name: "Wireshark" },
     ]
   },
 ];

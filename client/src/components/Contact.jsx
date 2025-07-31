@@ -49,6 +49,7 @@ function Contact() {
             type="text"
             name="name"
             required
+            placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
             className="mt-1 block w-full p-2 border border-gray-300 rounded"
@@ -61,6 +62,7 @@ function Contact() {
             type="email"
             name="email"
             required
+            placeholder="your@email.com"
             value={form.email}
             onChange={handleChange}
             className="mt-1 block w-full p-2 border border-gray-300 rounded"
@@ -73,6 +75,7 @@ function Contact() {
             name="message"
             rows="4"
             required
+            placeholder="Write your message..."
             value={form.message}
             onChange={handleChange}
             className="mt-1 block w-full p-2 border border-gray-300 rounded"

@@ -29,7 +29,9 @@ function Navbar() {
             >
               {item}
             </li>
+            
           ))}
+          
           <li>
             <button onClick={() => setDarkMode(!darkMode)}>
               {darkMode ? <FaSun /> : <FaMoon />}
