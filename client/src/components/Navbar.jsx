@@ -21,7 +21,7 @@ function Navbar() {
           Rayeni Sumanth Reddy
         </h1>
         <ul className="flex space-x-6 text-gray-800 dark:text-gray-200 font-medium">
-          {["Home", "About", "Projects", "Contact"].map((item) => (
+          {["Home", "About", "Projects","Certificates", "Contact"].map((item) => (
             <li
               key={item}
               className="cursor-pointer hover:text-blue-600 transition"
