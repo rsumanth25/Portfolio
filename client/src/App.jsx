@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import ContactInfo from './components/ContactInfo';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
+import Certificates from './components/Certificates';
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
       <Academics />
       <Skills />
       <Projects />
+       <Certificates /> 
       <Contact />
+
       <ContactInfo/>
       <Footer />
     </>
