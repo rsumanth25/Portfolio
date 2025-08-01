@@ -26,7 +26,7 @@ function About() {
           I’m always looking to explore real-world security problems and build solutions that are impactful and user-friendly.
         </p>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
-          My toolkit includes technologies like Flask, Node.js, MongoDB, MySQL, and tools like Wireshark, IDS, and SIEM platforms.
+          My toolkit includes technologies like Flask, Node.js, MongoDB, MySQL, and tools like Wireshark and SIEM platforms.
           I’m eager to contribute to innovative teams and continuously grow as a developer and security engineer.
         </p>
 

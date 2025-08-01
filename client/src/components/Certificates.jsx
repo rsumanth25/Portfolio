@@ -14,11 +14,11 @@ const certificates = [
     link: 'https://drive.google.com/file/d/1AODNrNSzNWp-FDKMf02K72sUANDHusaB/view?usp=drive_link',
   },
   {
-    title: 'Python Essentials - Part 1',
+    title: 'Python Essentials - 1',
     link: 'https://drive.google.com/file/d/1AL3UnfBla_cnpD1a5Jd6zmksT6jH3u1H/view?usp=drive_link',
   },
   {
-    title: 'Python Essentials - Part 2',
+    title: 'Python Essentials - 2',
     link: 'https://drive.google.com/file/d/1iNxQnNWm2mqJfiNSD1_sDNrUDHc8ql01/view?usp=drive_link',
   },
   {
