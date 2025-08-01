@@ -3,16 +3,17 @@ import React from 'react';
 const certificates = [
   {
     title: "Google CyberSecurity",
-    link: "https://www.coursera.org/account/accomplishments/professional-cert/A6XKY9GREAT6"
+    link: "https://drive.google.com/file/d/1oqUnaHP4pQgYtjfHM5GBbs8MJmkQEmF8/view?usp=drive_link"
   },
   {
-    title: "Python for Everybody – Coursera",
-    image: "/certificates/python-coursera.jpg"
+    title: "Data Analytics and Data Visualization - Accenture",
+    link: "https://drive.google.com/file/d/1FfuL25IvwnqdZtOCEN1IBV3MXwZ5F7dR/view?usp=drive_link"
   },
   {
-    title: "Data Structures in C – NPTEL",
-    image: "/certificates/data-structures.png"
+    title: "Advance Software engineer - Walmart",
+    link: "https://drive.google.com/file/d/1AODNrNSzNWp-FDKMf02K72sUANDHusaB/view?usp=drive_link"
   },
+  
   // Add more certificates here
 ];
 
