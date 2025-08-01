@@ -1,52 +1,52 @@
-import React from "react";
+import { FaFilePdf } from 'react-icons/fa';
 
 const certificates = [
   {
-    title: "Accenture: Data Analytics and Visualization",
-    img: "https://drive.google.com/uc?export=view&id=1FfuL25IvwnqdZtOCEN1IBV3MXwZ5F7dR",
-    link: "https://drive.google.com/file/d/1FfuL25IvwnqdZtOCEN1IBV3MXwZ5F7dR/view?usp=drive_link",
+    title: 'Accenture: Data Analytics and Visualization',
+    link: 'https://drive.google.com/file/d/1FfuL25IvwnqdZtOCEN1IBV3MXwZ5F7dR/view?usp=drive_link',
   },
   {
-    title: "Google: Cyber Security",
-    img: "https://drive.google.com/uc?export=view&id=1oqUnaHP4pQgYtjfHM5GBbs8MJmkQEmF8",
-    link: "https://drive.google.com/file/d/1oqUnaHP4pQgYtjfHM5GBbs8MJmkQEmF8/view?usp=drive_link",
+    title: 'Google: Cyber Security',
+    link: 'https://drive.google.com/file/d/1oqUnaHP4pQgYtjfHM5GBbs8MJmkQEmF8/view?usp=drive_link',
   },
   {
-    title: "Walmart: Advance Software Engineering",
-    img: "https://drive.google.com/uc?export=view&id=1AODNrNSzNWp-FDKMf02K72sUANDHusaB",
-    link: "https://drive.google.com/file/d/1AODNrNSzNWp-FDKMf02K72sUANDHusaB/view?usp=drive_link",
+    title: 'Walmart: Advance Software Engineering',
+    link: 'https://drive.google.com/file/d/1AODNrNSzNWp-FDKMf02K72sUANDHusaB/view?usp=drive_link',
+  },
+  {
+    title: 'Python Essentials - Part 1',
+    link: 'https://drive.google.com/file/d/1AL3UnfBla_cnpD1a5Jd6zmksT6jH3u1H/view?usp=drive_link',
+  },
+  {
+    title: 'Python Essentials - Part 2',
+    link: 'https://drive.google.com/file/d/1iNxQnNWm2mqJfiNSD1_sDNrUDHc8ql01/view?usp=drive_link',
+  },
+  {
+    title: 'AI Advanced',
+    link: 'https://drive.google.com/file/d/1uTT5lJIr6855cTMe_GtC69sPDEtNW0YN/view?usp=drive_link',
   },
 ];
 
-const Certificates = () => {
+export default function Certificates() {
   return (
-    <section id="certificates" className="py-16 px-6 bg-gray-50 dark:bg-gray-900">
-      <h2 className="text-3xl font-bold text-center mb-12 text-blue-600 dark:text-white">
-        Certificates
-      </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div className="py-12 px-4 bg-gray-50 min-h-screen" id="certificates">
+      <h2 className="text-3xl font-bold text-center mb-10 text-blue-600">Certificates</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
         {certificates.map((cert, index) => (
           <a
             key={index}
             href={cert.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition duration-300 p-4 text-center"
+            className="w-72 bg-white shadow-lg p-6 rounded-xl text-center hover:shadow-2xl transition duration-300"
           >
-            <img
-              src={cert.img}
-              alt={cert.title}
-              className="w-full h-52 object-contain rounded mb-4"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-              {cert.title}
-            </h3>
+            <div className="flex justify-center mb-4 text-red-600 text-5xl">
+              <FaFilePdf />
+            </div>
+            <p className="text-lg font-semibold text-gray-800">{cert.title}</p>
           </a>
         ))}
       </div>
-    </section>
+    </div>
   );
-};
-
-export default Certificates;
+}
