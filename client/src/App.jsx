@@ -21,9 +21,8 @@ function App() {
       <Academics />
       <Skills />
       <Projects />
-       <Certificates /> 
+      <Certificates /> 
       <Contact />
-
       <ContactInfo/>
       <Footer />
     </>
