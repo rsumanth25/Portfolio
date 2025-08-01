@@ -3,7 +3,7 @@ import React from 'react';
 const certificates = [
   {
     title: "Google CyberSecurity",
-    image: "C:\Users\Rayeni SumanthReddy\OneDrive\Desktop\Portfolio\client\public\certificates\Cybersecurity-Coursera.pdf"
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/A6XKY9GREAT6"
   },
   {
     title: "Python for Everybody – Coursera",
