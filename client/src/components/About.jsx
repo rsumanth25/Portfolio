@@ -29,7 +29,14 @@ function About() {
           My toolkit includes technologies like Flask, Node.js, MongoDB, MySQL, and tools like Wireshark and SIEM platforms.
           I’m eager to contribute to innovative teams and continuously grow as a developer and security engineer.
         </p>
-
+      <a
+    href="https://drive.google.com/file/d/your_file_id/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-300"
+  >
+    📄 View Resume
+  </a>
       
     </div>
   </motion.div>
