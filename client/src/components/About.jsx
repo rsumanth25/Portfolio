@@ -36,7 +36,7 @@ function About() {
     rel="noopener noreferrer"
     className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-md shadow hover:scale-105 transition duration-300"
   >
-    📄 View Resume
+    
   </a>
       
     </div>
