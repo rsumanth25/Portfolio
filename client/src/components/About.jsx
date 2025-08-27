@@ -31,12 +31,13 @@ function About() {
         </p>
       <a
     
-    href="https://drive.google.com/file/d/1CI3IS2GvXjnJ8ve1P2hpaHhudYtdCzsK/view?usp=drive_link"
+    href="https://drive.google.com/file/d/1hV_ZEler7NA1NIwhKVM0o4Dc_ZTjquBG/view?usp=sharing"
+
     target="_blank"
     rel="noopener noreferrer"
     className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-md shadow hover:scale-105 transition duration-300"
   >
-    
+    📄 View Resume
   </a>
       
     </div>
