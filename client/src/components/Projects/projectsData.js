@@ -2,10 +2,10 @@ export const projects = [
   {
     id: 1,
     featured: true,
-    title: "QMedia",
+    title: "digital campaigns",
     description:
       "Advertising and media buying platform for planning and executing campaigns across digital and offline media.",
-    image: "/projects/qmedia.jpg",
+    image: "/projects/digital-media.jpg",
     technologies: ["React", "Node.js", "Express","Typescript", "MongoDB"],
     github: "https://github.com/rsumanth25/Qmedia",
     live: "",
