@@ -74,12 +74,7 @@ function Navbar() {
 
           <div className="flex items-center gap-5">
 
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="text-white text-xl hover:scale-110 duration-300"
-            >
-              {darkMode ? <FaSun /> : <FaMoon />}
-            </button>
+            
 
             <a
               href="#contact"
