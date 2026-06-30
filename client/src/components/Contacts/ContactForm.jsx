@@ -37,7 +37,8 @@ function ContactForm() {
       );
 
       const data = await res.json();
-
+console.log("Status:", res.status);
+console.log("Response:", data);
 if (res.ok) {
   alert(data.message);
 
@@ -49,7 +50,7 @@ if (res.ok) {
   });
 } else {
   alert(data.message);
-}
+}   
     } catch (err) {
       console.log(err);
       alert("⚠️ Server Error");
