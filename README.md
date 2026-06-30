@@ -1,43 +1,139 @@
-# 💼 Sumanth Reddy's Portfolio
+# 💼 Sumanth Reddy Rayeni | Developer Portfolio
 
-This is my personal portfolio website built using **React**, **Tailwind CSS**, and a **Node.js/Express** backend for the contact form.
+A modern, responsive, and interactive developer portfolio showcasing my projects, technical skills, professional experience, certifications, and achievements. Built with a focus on performance, clean UI, and an engaging user experience.
 
-## 🌐 Live Demo
+## 🌐 Live Portfolio
 
-Check out the live portfolio here:  
-🔗 [https://portfolio-one-jet-39.vercel.app](https://portfolio-one-jet-39.vercel.app)
----
-
-## 📁 Project Structure
-
-Portfolio/
-├── client/ → React + Tailwind frontend
-├── server/ → Node.js backend for contact form
-└── README.md
+🔗 https://portfolio-one-jet-39.vercel.app
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🌐 Responsive React frontend with Tailwind CSS
-- 🧑‍💻 About, Skills, Projects, and Contact sections
-- ✍️ Typing animation and scroll effects
-- 📧 Contact form that sends emails using Gmail SMTP
-- 🌙 Dark mode support
-- ✅ Deployed with Vercel (frontend) and Render (backend)
+- 🚀 Modern and responsive UI
+- 🎨 Beautiful animations using Framer Motion
+- 👨‍💻 Professional Hero section
+- 👤 About Me section
+- 🎓 Education Timeline
+- 💼 Professional Experience
+- 🌟 Leadership & Professional Development
+- 🛠️ Interactive Skills Showcase
+- 📂 Featured Projects
+- 🏆 Achievements & Certifications
+- 📬 Functional Contact Form powered by EmailJS
+- 🌙 Dark Theme UI
+- 📱 Fully Responsive across Desktop, Tablet & Mobile
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, Vite, Tailwind CSS, Framer Motion, React Icons
-- **Backend**: Node.js, Express, Nodemailer
-- **Deployment**: Vercel (client), Render (server)
+### Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Icons
+
+### Contact Service
+
+- EmailJS
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+Portfolio/
+│
+├── client/
+│   ├── src/
+│   ├── public/
+│   ├── components/
+│   └── assets/
+│
+└── README.md
+```
+
+---
+
+## 📸 Portfolio Sections
+
+- Home
+- About
+- Education
+- Experience
+- Leadership
+- Skills
+- Projects
+- Achievements
+- Certifications
+- Contact
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/rsumanth25/Portfolio.git
+```
+
+### Navigate to Project
+
+```bash
+cd Portfolio/client
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm run dev
+```
 
 ---
 
 ## 📬 Contact
 
-If you'd like to connect, feel free to reach out through the contact form on the site — or fork this project and build your own!
+📧 Email
+
+**rayenisumanthreddy@gmail.com**
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/rayeni-sumanth-reddy
+
+💻 GitHub
+
+https://github.com/rsumanth25
+
+🌐 Portfolio
+
+https://portfolio-one-jet-39.vercel.app
 
 ---
+
+
+## ⭐ Support
+
+If you found this portfolio helpful or inspiring, consider giving the repository a ⭐ on GitHub.
+
+---
+
+## 👨‍💻 Developed By
+
+** Rayeni Sumanth Reddy **
+
+Building scalable software, intuitive user experiences, and AI-powered solutions.
