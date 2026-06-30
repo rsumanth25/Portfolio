@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     featured: true,
-    title: "digital campaigns",
+    title: "Digital campaigns",
     description:
       "Advertising and media buying platform for planning and executing campaigns across digital and offline media.",
     image: "/projects/digital-media.jpg",
