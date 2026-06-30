@@ -1,45 +1,111 @@
 import { useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
-  const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+  const navLinks = [
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Leadership", href: "#leadership" },
+    { name: "Projects", href: "#projects" },
+    { name: "Certificates", href: "#certificates" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow px-4 py-3">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-600 dark:text-white cursor-pointer" onClick={() => scrollTo("home")}>
-          Rayeni Sumanth Reddy
-        </h1>
-        <ul className="flex space-x-6 text-gray-800 dark:text-gray-200 font-medium">
-          {["Home", "About", "Projects","Certificates", "Contact"].map((item) => (
-            <li
-              key={item}
-              className="cursor-pointer hover:text-blue-600 transition"
-              onClick={() => scrollTo(item.toLowerCase())}
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full flex justify-center">
+
+      <nav
+        className="
+        w-[92%]
+        max-w-7xl
+        bg-[#0B1220]/75
+        backdrop-blur-xl
+        border
+        border-white/10
+        rounded-full
+        px-8
+        py-4
+        shadow-2xl
+        "
+      >
+
+        <div className="flex items-center justify-between">
+
+          {/* Logo */}
+
+          <a
+            href="#home"
+            className="flex items-center gap-3"
+          >
+            <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold">
+              SR
+            </div>
+
+            <h2 className="text-2xl font-bold text-white">
+              Sumanth
+              <span className="text-purple-400">Reddy</span>
+            </h2>
+          </a>
+
+          {/* Navigation */}
+
+          <ul className="hidden lg:flex items-center gap-10">
+
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  className="text-gray-300 hover:text-white transition font-medium"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+
+          </ul>
+
+          {/* Right Side */}
+
+          <div className="flex items-center gap-5">
+
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="text-white text-xl hover:scale-110 duration-300"
             >
-              {item}
-            </li>
-            
-          ))}
-          
-          <li>
-            <button onClick={() => setDarkMode(!darkMode)}>
               {darkMode ? <FaSun /> : <FaMoon />}
             </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+            <a
+              href="#contact"
+              className="
+              px-7
+              py-3
+              rounded-full
+              text-white
+              font-semibold
+              bg-gradient-to-r
+              from-blue-600
+              to-purple-600
+              hover:scale-105
+              duration-300
+              "
+            >
+              Let's Talk
+            </a>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </header>
   );
 }
 

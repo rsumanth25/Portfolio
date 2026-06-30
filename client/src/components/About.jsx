@@ -1,49 +1,151 @@
-import { motion } from 'framer-motion';
-import profilePic from '../assets/sumanth.jpg'; // Add your photo
+import { motion } from "framer-motion";
+import {
+  FaFolderOpen,
+  FaCertificate,
+  FaCode,
+  FaBriefcase,
+} from "react-icons/fa";
+
+const stats = [
+  {
+    icon: <FaFolderOpen />,
+    value: "10+",
+    title: "Projects Completed",
+    color: "from-cyan-500 to-blue-500",
+  },
+  {
+    icon: <FaCertificate />,
+    value: "8+",
+    title: "Certifications Earned",
+    color: "from-purple-500 to-pink-500",
+  },
+  {
+    icon: <FaCode />,
+    value: "250+",
+    title: "Coding Problems",
+    color: "from-green-500 to-emerald-500",
+  },
+  {
+    icon: <FaBriefcase />,
+    value: "3",
+    title: "Internships & Leadership",
+    color: "from-orange-500 to-red-500",
+  },
+];
 
 function About() {
   return (
     <section
-  id="about"
-  className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-6"
->
-  <motion.div
-    className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center"
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8 }}
-  >
-    <img src={profilePic} alt="Sumanth Reddy" className="w-full rounded-xl shadow-lg" />
-    <div>
-      <h2 className="text-3xl font-bold text-blue-600 dark:text-white mb-4">About Me</h2>
-      <p className="text-gray-700 dark:text-gray-300 mb-4">
-        I'm Rayeni Sumanth Reddy, a Cybersecurity and web dev enthusiast from Hyderabad.
-        I build secure tools and solve real-world problems through code.
-      </p>
-      <p className="text-gray-700 dark:text-gray-300 mb-4">
-          With hands-on experience in Python, Java, and web development, I’ve worked on projects like encryption tools, chatbots, and visualizers.
-          I’m always looking to explore real-world security problems and build solutions that are impactful and user-friendly.
-        </p>
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
-          My toolkit includes technologies like Flask, Node.js, MongoDB, MySQL, and tools like Wireshark and SIEM platforms.
-          I’m eager to contribute to innovative teams and continuously grow as a developer and security engineer.
-        </p>
-      <a
-    
-    href="https://drive.google.com/file/d/1hV_ZEler7NA1NIwhKVM0o4Dc_ZTjquBG/view?usp=sharing"
+      id="about"
+      className="py-16 lg:py-20 bg-[#050816] text-white"
+    >
+      <div className="max-w-7xl mx-auto px-8">
 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-md shadow hover:scale-105 transition duration-300"
-  >
-    📄 View Resume
-  </a>
-      
-    </div>
-  </motion.div>
-</section>
+        {/* Heading */}
 
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <p className="uppercase tracking-[0.3em] text-blue-400 text-lg font-semibold">
+            ABOUT ME
+          </p>
+
+          <h2 className="text-5xl font-bold mt-5">
+             More About Me
+          </h2>
+
+          <p className="text-gray-400 mt-6 max-w-3xl mx-auto text-lg">
+            Passionate about building scalable software,
+            AI-powered applications, and modern web experiences.
+          </p>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-start max-w-6xl mx-auto">
+
+          {/* Left */}
+
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-7"
+          >
+
+            <h3 className="text-3xl font-bold mb-6">
+              Who I Am
+            </h3>
+
+            <p className="text-gray-300 leading-9 mb-6">
+              I'm <span className="text-blue-400 font-semibold">Rayeni Sumanth Reddy</span>,
+              an aspiring Software Engineer with a strong interest in Full Stack
+              Development, Artificial Intelligence, and scalable software
+              systems. I enjoy solving real-world problems by building
+              high-quality applications using modern technologies.
+            </p>
+
+            <p className="text-gray-300 leading-9 mb-6">
+              I have experience developing projects using React, Node.js,
+              Express.js, Java, Python, MongoDB and MySQL. My interests
+              also extend to AI, Machine Learning, Blockchain and Cloud
+              Computing.
+            </p>
+
+            <p className="text-gray-300 leading-9 mb-6">
+              Currently, I am working as a Software Development Intern at
+              Quinterra Software Solutions, where I contribute to full-stack
+              application development while continuously expanding my
+              expertise in software engineering.
+            </p>
+
+            
+
+          </motion.div>
+
+          {/* Right */}
+
+         <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+
+            {stats.map((item, index) => (
+
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{
+                  scale: 1.03,
+                }}
+                className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6"
+              >
+
+                <div
+                  className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${item.color} flex items-center justify-center text-3xl mb-5`}
+                >
+                  {item.icon}
+                </div>
+
+                <h3 className="text-4xl font-black">
+                  {item.value}
+                </h3>
+
+                <p className="text-gray-400 mt-3">
+                  {item.title}
+                </p>
+
+              </motion.div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
   );
 }
 
