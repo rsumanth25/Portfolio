@@ -1,6 +1,19 @@
 export const projects = [
+
   {
     id: 1,
+    featured: true,
+    title: "Full Stack E-Commerce Website | MERN Stack",
+    description:
+      "Full-stack MERN e-commerce platform with admin dashboard, secure payments, and cloud deployment",
+    image: "/projects/urbanstore.png",
+    technologies: [ "MongoDB", "Express","React", "Node.js","Javascript"," Redux Toolkit", "JWT Authentication"],
+    github: "https://github.com/rsumanth25/E-Commerce-website",
+    live: "https://e-commerce-website-one-phi-30.vercel.app/",
+  },
+
+  {
+    id: 2,
     featured: true,
     title: "Digital campaigns",
     description:
@@ -12,7 +25,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     featured: false,
     title: "Employee Management System",
     description:
@@ -25,7 +38,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     featured: false,
     title: "TaskFlow",
     description:
@@ -37,7 +50,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     featured: false,
     title: "QuestGPT",
     description:
@@ -49,7 +62,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     featured: false,
     title: "CSKG4APT",
     description:
@@ -61,7 +74,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     featured: false,
     title: "Blockchain Certificate Verification",
     description:
