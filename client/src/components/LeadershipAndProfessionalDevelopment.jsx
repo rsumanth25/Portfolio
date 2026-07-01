@@ -9,7 +9,7 @@ import {
 const activities = [
   {
     year: "2026",
-    title: "AI/ML Virtual Intern",
+    title: "AI/ML Intern",
     company: "Infosys Springboard 6.0",
     duration: "Feb 2026 – Apr 2026",
     location: "Remote",
